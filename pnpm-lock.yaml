@@ -29,6 +29,9 @@ importers:
       morgan:
         specifier: ~1.9.1
         version: 1.9.1
+      wake_on_lan:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       nodemon:
         specifier: ^3.1.4
@@ -242,6 +245,9 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
   morgan@1.9.1:
     resolution: {integrity: sha512-HQStPIV4y3afTiCYVxirakhlCfGkI161c76kKFca7Fk1JusM//Qeo1ej2XaMniiNeaZklMVrh3vTtIzpzwbpmA==}
     engines: {node: '>= 0.8.0'}
@@ -374,6 +380,10 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  wake_on_lan@1.0.0:
+    resolution: {integrity: sha512-0QSpxny0QmsssshI6kePj6cobQPK+i8r5shfj58ZfQIUH9fUTyAaYPqZO3W/Ai7mN4vQVdTdsSGIr20M81UL6Q==}
+    hasBin: true
 
   xml2js@0.4.23:
     resolution: {integrity: sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==}
@@ -599,6 +609,8 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.11
 
+  minimist@1.2.8: {}
+
   morgan@1.9.1:
     dependencies:
       basic-auth: 2.0.1
@@ -731,6 +743,10 @@ snapshots:
   utils-merge@1.0.1: {}
 
   vary@1.1.2: {}
+
+  wake_on_lan@1.0.0:
+    dependencies:
+      minimist: 1.2.8
 
   xml2js@0.4.23:
     dependencies:

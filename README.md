@@ -1,4 +1,3 @@
-@[TOC](微信公众号开发)
 # 认识nodejs
 ```
 pnpm init
